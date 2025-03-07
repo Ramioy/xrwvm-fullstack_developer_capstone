@@ -1,0 +1,198 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact-container {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    color: #0056b3;
+}
+
+.contact-info p {
+    color: #555;
+}
+
+.contact-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #004499;
+}
+
+/* New section for additional contact information */
+.additional-contact-info {
+    max-width: 1100px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.additional-contact-info h3 {
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.additional-contact-info .contact-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.additional-contact-info .contact-details li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.additional-contact-info .contact-details strong {
+    color: #333;
+}
+
+  </style>
+</head>
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      <!-- Main Section for Contact Page -->
+    <main class="contact-main">
+        <section class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Dealeships</h2>
+                <p>Need assistance with your car rental? Reach out to us and we'll be happy to help!</p>
+                <img src="https://images.pexels.com/photos/753876/pexels-photo-753876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Car Rental" class="contact-img">
+            </div>
+
+            <div class="contact-form">
+                <h3>Send us a message</h3>
+                <form action="submit-form.php" method="POST">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Your message"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <section class="additional-contact-info">
+            <div class="contact-details">
+                <h3>Our Contact Information</h3>
+                <ul>
+                    <li><strong>Email:</strong> support@dealeships.com</li>
+                    <li><strong>Phone:</strong> +1 (800) 123-4567</li>
+                    <li><strong>Address:</strong> 123 Dealeships Blvd, Cityville, CA 90210</li>
+                    <li><strong>Business Hours:</strong> Mon - Fri: 9:00 AM - 6:00 PM, Sat: 10:00 AM - 4:00 PM</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+</div>
+
+</html>
