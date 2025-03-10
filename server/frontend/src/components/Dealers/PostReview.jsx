@@ -69,9 +69,8 @@ const PostReview = () => {
     const retobj = await res.json();
     
     if(retobj.status === 200) {
-      let dealerobjs = Array.from(retobj.dealer)
-      if(dealerobjs.length > 0)
-        setDealer(dealerobjs[0])
+      if(Object.keys(retobj.dealer).length > 0)
+        setDealer(retobj.dealer)
     }
   }
 
