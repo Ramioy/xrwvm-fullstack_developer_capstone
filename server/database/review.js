@@ -1,13 +1,13 @@
-const mongoose = require('mongoose');
+let mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
+let Schema = mongoose.Schema;
 
-const reviews = new Schema({
-	id: {
+let reviews = new Schema({
+  id: {
     type: Number,
     required: true,
-	},
-	name: {
+  },
+  name: {
     type: String,
     required: true
   },
