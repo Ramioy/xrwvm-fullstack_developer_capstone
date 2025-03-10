@@ -1,9 +1,10 @@
+/*jshint esversion: 8 */
 // let { Int32 } = require('mongodb');
-let mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-let Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-let cars = new Schema({
+const cars = new Schema({
   dealer_id: {
     type: Number,
     required: true
