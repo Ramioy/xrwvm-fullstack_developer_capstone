@@ -6,7 +6,7 @@ let cors = require('cors');
 let app = express();
 let port = 3030;
 
-app.use(cors())
+app.use(cors());
 app.use(require('body-parser').urlencoded({
   extended: false
 }));
